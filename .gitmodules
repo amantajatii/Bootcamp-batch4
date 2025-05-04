@@ -1,0 +1,6 @@
+[submodule "bootcamp_batch4/lib/forge-std"]
+	path = bootcamp_batch4/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "bootcamp_batch4/lib/openzeppelin-contracts"]
+	path = bootcamp_batch4/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
