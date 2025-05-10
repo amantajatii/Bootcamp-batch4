@@ -39,8 +39,8 @@ contract Vault is ERC20 {
     IERC20(usdc).transfer(msg.sender, amount);
   }
 
-    function distibuteYield(uint256 amount) public {
+    function distributeYield(uint256 amount) public {
       IERC20(usdc).transferFrom(msg.sender, address(this), amount);
     }
-}
 
+}
