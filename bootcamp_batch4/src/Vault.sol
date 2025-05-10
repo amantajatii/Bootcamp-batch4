@@ -28,6 +28,19 @@ contract Vault is ERC20 {
     IERC20(usdc).transferFrom(msg.sender, address(this), amount);
   }
 
+  function withdraw(uint256 shares) public {
+    uint256 totalAsset = IERC20(usdc).balanceOf(address(this));
+    uint256 totalShares = totalSupply();
 
+    uint256 amount = shares * totalAsset / totalShares;
+
+    _burn(msg.sender, shares);
+
+    IERC20(usdc).transfer(msg.sender, amount);
+  }
+
+    function distibuteYield(uint256 amount) public {
+      IERC20(usdc).transferFrom(msg.sender, address(this), amount);
+    }
 }
 
