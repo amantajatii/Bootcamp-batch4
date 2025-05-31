@@ -1,5 +1,5 @@
 {
-  "name": "indexer",
+  "name": "first-app",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -12,14 +12,14 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "ponder": "^0.11.9",
+    "ponder": "^0.11.6",
     "hono": "^4.5.0",
     "viem": "^2.21.3"
   },
   "devDependencies": {
     "@types/node": "^20.9.0",
     "eslint": "^8.53.0",
-    "eslint-config-ponder": "^0.11.9",
+    "eslint-config-ponder": "^0.11.6",
     "typescript": "^5.2.2"
   },
   "engines": {
