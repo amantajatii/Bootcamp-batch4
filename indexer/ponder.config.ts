@@ -12,7 +12,10 @@ export default createConfig({
     ERC20: {
       chain: "arbitrum",
       abi: Erc20Abi,
-      address: "0xC99522da19b62ff5035355ACBe3Ebfef1F58Bc59",
+      address: [
+        "0xC99522da19b62ff5035355ACBe3Ebfef1F58Bc59",
+        "0x1936944ea2aa2fb748a4a1962a2b2d52bf7e4a47",
+      ],
       startBlock: 342109081,
     },
   },
