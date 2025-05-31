@@ -38,3 +38,15 @@ export const holder = onchainTable("holder", (t) => ({
 export const holderRelations = relations(holder, ({ one }) => ({
   token: one(token, { fields: [holder.tokenId], references: [token.id] }),
 }));
+
+export const vaultSnapshot = onchainTable("vault_snapshot", (t) => ({
+  // normalizedTimestamp
+  id: t.text().primaryKey(),
+  normalizedTimestamp: t.bigint().notNull(),
+  open: t.numeric().notNull(),
+  high: t.numeric().notNull(),
+  low: t.numeric().notNull(),
+  close: t.numeric().notNull(),
+  volume: t.bigint().notNull(),
+  tvl: t.bigint().notNull(),
+}));

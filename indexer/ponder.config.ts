@@ -1,6 +1,6 @@
 import { createConfig } from "ponder";
 import { Erc20Abi } from "./abis/erc20Abi";
-
+import { vaultAbi} from "./abis/VaultAbi";
 export default createConfig({
   chains: {
     arbitrum: {
@@ -17,6 +17,12 @@ export default createConfig({
         "0x1936944ea2aa2fb748a4a1962a2b2d52bf7e4a47",
       ],
       startBlock: 342109081,
+    },
+    Vault: {
+      chain: "arbitrum",
+      abi: vaultAbi,
+      address: "0x1936944ea2aa2fb748a4a1962a2b2d52bf7e4a47",
+      startBlock: 342109085,
     },
   },
 });
